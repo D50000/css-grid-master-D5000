@@ -1,4 +1,5 @@
 
+
 # What The Grid
 - In 2018 developing grid with FireFox is more usefull than Chrome.
 - Easiest way to centering elements in CSS.
@@ -6,9 +7,7 @@
 - Flexbox is good but Grid is better in most use case.
 - CSS do all the styles layout.
 
-reference:
-https://css-tricks.com/snippets/css/complete-guide-grid/
-https://www.w3schools.com/css/css_grid.asp
+reference:<br/>https://css-tricks.com/snippets/css/complete-guide-grid/<br/>https://www.w3schools.com/css/css_grid.asp
 
 ## 1.Introduce
 In 2018 developing grid with FireFox is more usefull than Chrome.
@@ -38,13 +37,30 @@ FireFox support toggling the grid layout display.
 ![](https://github.com/D50000/css-grid-master-D5000/blob/master/04%20-%20CSS%20Grid%20Dev%20Tools/Line%20Meanings.png)
 
 ## 5.Grid Implicit vs Explicit Grid Tracks
-In FireFox Dev tool layout:
-explicit columns and rows: - - - - -
-implicit columns and rows: . . . . .
+In FireFox Dev tool layout:<br/>explicit columns and rows: - - - - -<br/>implicit columns and rows: . . . . .
 
 ## 6.grid-auto-flow Explained
 Auto flow default is **row**.
 ```
 grid-auto-flow: column;
 grid-auto-columns: 200px;
+```
+
+## 7.Sizing Tracks in CSS Grid
+```
+.container {
+	display: grid;
+	grid-template-columns: auto  1fr  auto  1fr;
+	/* auto => it will match the biggest size in the column */
+	/* fr => fraction unit the left of the space */
+}
+```
+
+## 8.CSS Grid repeat Function
+```
+.container {
+	display: grid;
+	grid-template-columns: 100px  repeat(2, 1fr  auto) 200px  repeat(2, 5fr);
+	/* repeat(times, grid-template) */
+}
 ```
