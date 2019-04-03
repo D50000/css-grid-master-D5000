@@ -61,6 +61,39 @@ grid-auto-columns: 200px;
 .container {
 	display: grid;
 	grid-template-columns: 100px  repeat(2, 1fr  auto) 200px  repeat(2, 5fr);
-	/* repeat(times, grid-template) */
+	/* repeat(times, grid-template)
+	grid-template-columns: repeat(5, 1fr 2fr); //Make the grid 10 columns wide, every other taking up twice the free space
+	*/
 }
 ```
+
+## 9.Sizing Grid Items
+```
+.item {
+	//Merge for the column and row.
+	grid-column: span 10;
+	grid-row: span 3;
+}
+```
+
+## 10.Placing Grid Items
+```
+.item {
+	grid-column: span 2;
+	/* normal method */
+	grid-row: 1 / -1;
+	/* shorthand
+	grid-column-start: 1;
+	grid-column-end: 3;
+	ps: end -1 will end in the explicit grid.
+	*/
+}
+```
+
+## 10.Spanning & Placing Cardio
+Example for the item property.
+
+ - grid-column: 3 / 5;
+ - grid-column: 5 / -1;
+ - grid-row: 4 / span 3;
+
