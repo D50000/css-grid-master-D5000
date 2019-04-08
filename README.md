@@ -90,10 +90,38 @@ grid-auto-columns: 200px;
 }
 ```
 
-## 10.Spanning & Placing Cardio
+## 11.Spanning & Placing Cardio
 Example for the item property.
 
  - grid-column: 3 / 5;
  - grid-column: 5 / -1;
  - grid-row: 4 / span 3;
 
+
+## 12.auto-fit and auto-fill
+**Most used properties in css Grid.**
+```
+.container {
+	display: grid;
+	grid-gap: 20px;
+	border: 10px  solid  var(--yellow);
+	grid-template-columns: repeat(auto-fit, 150px);
+	/* most used properties in css grid
+	auto-fill > RWD auto figure out the space that item need.
+	auto-fit > RWD auto figure out the space that item need, and it will stack the explicit grid.
+	*/
+}
+```
+
+## 13.Using minmax( )
+**Most used properties in css Grid.**
+```
+.container {
+	display: grid;
+	grid-gap: 20px;
+	border: 10px  solid  var(--yellow);
+	/* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+	/* fit-content(120px) == auto and max size 120px */
+	grid-template-columns: fit-content(120px) 150px  150px  150px;
+}
+```
