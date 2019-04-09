@@ -125,3 +125,68 @@ Example for the item property.
 	grid-template-columns: fit-content(120px) 150px  150px  150px;
 }
 ```
+
+
+## 14.Grid Template Areas
+Use template columns and rows to set the grid then name them by template areas.If you set a `.` instead of a name, it will be a dead space.
+```
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr  10fr  1fr;
+	grid-template-rows: 150px  150px  100px;
+	/* use template columns and rows to set the grid
+	then name them by template areas.
+	*/
+	grid-template-areas:
+		"sidebar-1 content sidebar-2"
+		"sidebar-1 content sidebar-2"
+		"footer footer footer"
+}
+
+/* Setup the class reference to the "grid-template-areas". */
+.footer {
+	grid-area: footer;
+}
+
+.item1 {
+	grid-area: sidebar-1;
+}
+
+.item2 {
+	grid-area: content;
+}
+
+.item3 {
+	grid-area: sidebar-2;
+}
+```
+
+## 15.Naming Lines in CSS Grid
+[ ] set the name inside, you can also set multiple names
+```
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: [sidebar-start site-left] 1fr [sidebar-end content-start] 500px [content-end] 1fr [site-right];
+	grid-template-rows: [content-top] repeat(10, auto) [content-bottom];
+}
+
+.item3 {
+	background: slateblue;
+	grid-column: sidebar-end;
+	grid-row: content-top / content-bottom;
+	/* same as => grid-column: 2; grid-row: 1 / span 10; */
+}
+```
+
+## 16.grid-auto-flow dense Block Fitting
+grid-auto-flow default is row, and dense will auto fill all the space. But the item order will be wrong.
+```
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(10, 1fr);
+	grid-auto-flow: dense;
+}
+```
