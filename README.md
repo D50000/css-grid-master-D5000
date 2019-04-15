@@ -190,3 +190,17 @@ grid-auto-flow default is row, and dense will auto fill all the space. But the i
 	grid-auto-flow: dense;
 }
 ```
+
+## 17.Alignment + Centering
+[https://developer.mozilla.org/en-US/docs/Web/CSS/place-content](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content)
+ - justify: main axis
+ - align: cross axis
+
+## 18.Re-ordering Grid Items
+.Item {
+	order: 2;
+	/* Use order property for ordering, default is 0. */
+}
+
+## 19.Nesting Grid Layouts
+Simple Nesting Grid layout for albums.
