@@ -1,6 +1,6 @@
 
 
-# What The Grid
+# What IS The Grid
 - In 2018 developing grid with FireFox is more usefull than Chrome.
 - Easiest way to centering elements in CSS.
 - Grid is convenient for overlapping the elements.
@@ -204,3 +204,6 @@ grid-auto-flow default is row, and dense will auto fill all the space. But the i
 
 ## 19.Nesting Grid Layouts
 Simple Nesting Grid layout for albums.
+
+## 20.CSS Grid Image Gallery!
+Random size image gallery layout example.
