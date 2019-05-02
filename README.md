@@ -198,8 +198,8 @@ grid-auto-flow default is row, and dense will auto fill all the space. But the i
 
 ## 18.Re-ordering Grid Items
 .Item {
+	//Use order property for ordering, default is 0.
 	order: 2;
-	/* Use order property for ordering, default is 0. */
 }
 
 ## 19.Nesting Grid Layouts
@@ -207,3 +207,9 @@ Simple Nesting Grid layout for albums.
 
 ## 20.CSS Grid Image Gallery!
 Random size image gallery layout example.
+
+## 21.Flexbox vs CSS Grid
+Many examples for layout comparing with Flexbox and Grid.
+
+## 22.Recreating Codepen
+Simple example of Codepen layout.
