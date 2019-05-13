@@ -213,3 +213,12 @@ Many examples for layout comparing with Flexbox and Grid.
 
 ## 22.Recreating Codepen
 Simple example of Codepen layout.
+
+## 23.Bootstrappy Grid with CSS Variables!
+Declare CSS variable by using `--span: 1` in ".style" or inline element, and use it by `var(--span)`.
+
+## 24.Responsive Website!
+Full Responsive Website example.
+
+## 25.Full Bleed Blog Layout!
+Full Bleed Blog Layout example.
