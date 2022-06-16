@@ -1,7 +1,6 @@
-
-
 # What IS The Grid
-- In 2018 developing grid with FireFox is more usefull than Chrome.
+
+- In 2018 developing grid with FireFox is more useful than Chrome.
 - Easiest way to centering elements in CSS.
 - Grid is convenient for overlapping the elements.
 - Flexbox is good but Grid is better in most use case.
@@ -10,16 +9,21 @@
 reference:<br/>https://css-tricks.com/snippets/css/complete-guide-grid/<br/>https://www.w3schools.com/css/css_grid.asp
 
 ## 1.Introduce
-In 2018 developing grid with FireFox is more usefull than Chrome.
-firefox develoved mode (F12) grid  support:
+
+In 2018 developing grid with FireFox is more useful than Chrome.
+firefox developed mode (F12) grid support:
+
 - more useful layout tools
-- more display detail and informations
+- more display detail and information
 
 ## 2.Start to Setup
+
 Download Firefox, node, browser-sync for more productive.
 
 ## 3.Grid Fundamentals
+
 Basic Grid syntax.
+
 ```
 .container {
 	display: grid;
@@ -33,20 +37,25 @@ Basic Grid syntax.
 ```
 
 ## 4.CSS Grid Dev Tools
+
 FireFox support toggling the grid layout display.
 ![](https://github.com/D50000/css-grid-master-D5000/blob/master/04%20-%20CSS%20Grid%20Dev%20Tools/Line%20Meanings.png)
 
 ## 5.Grid Implicit vs Explicit Grid Tracks
+
 In FireFox Dev tool layout:<br/>explicit columns and rows: - - - - -<br/>implicit columns and rows: . . . . .
 
 ## 6.grid-auto-flow Explained
+
 Auto flow default is **row**.
+
 ```
 grid-auto-flow: column;
 grid-auto-columns: 200px;
 ```
 
 ## 7.Sizing Tracks in CSS Grid
+
 ```
 .container {
 	display: grid;
@@ -57,6 +66,7 @@ grid-auto-columns: 200px;
 ```
 
 ## 8.CSS Grid repeat Function
+
 ```
 .container {
 	display: grid;
@@ -68,6 +78,7 @@ grid-auto-columns: 200px;
 ```
 
 ## 9.Sizing Grid Items
+
 ```
 .item {
 	//Merge for the column and row.
@@ -77,6 +88,7 @@ grid-auto-columns: 200px;
 ```
 
 ## 10.Placing Grid Items
+
 ```
 .item {
 	grid-column: span 2;
@@ -91,15 +103,17 @@ grid-auto-columns: 200px;
 ```
 
 ## 11.Spanning & Placing Cardio
+
 Example for the item property.
 
- - grid-column: 3 / 5;
- - grid-column: 5 / -1;
- - grid-row: 4 / span 3;
-
+- grid-column: 3 / 5;
+- grid-column: 5 / -1;
+- grid-row: 4 / span 3;
 
 ## 12.auto-fit and auto-fill
+
 **Most used properties in css Grid.**
+
 ```
 .container {
 	display: grid;
@@ -114,7 +128,9 @@ Example for the item property.
 ```
 
 ## 13.Using minmax( )
+
 **Most used properties in css Grid.**
+
 ```
 .container {
 	display: grid;
@@ -126,9 +142,10 @@ Example for the item property.
 }
 ```
 
-
 ## 14.Grid Template Areas
+
 Use template columns and rows to set the grid then name them by template areas.If you set a `.` instead of a name, it will be a dead space.
+
 ```
 .container {
 	display: grid;
@@ -167,9 +184,11 @@ Use template columns and rows to set the grid then name them by template areas.I
 	grid-area: aoe;
 }
 ```
-
+![](https://github.com/D50000/css-grid-master-D5000/blob/master/assets/images/no14_example.jpg)
 ## 15.Naming Lines in CSS Grid
+
 Set the name inside **[ ]**, you can also set multiple names
+
 ```
 .container {
 	display: grid;
@@ -187,7 +206,9 @@ Set the name inside **[ ]**, you can also set multiple names
 ```
 
 ## 16.grid-auto-flow dense Block Fitting
+
 grid-auto-flow default is row, and dense will auto fill all the space. But the item order will be wrong.
+
 ```
 .container {
 	display: grid;
@@ -198,33 +219,43 @@ grid-auto-flow default is row, and dense will auto fill all the space. But the i
 ```
 
 ## 17.Alignment + Centering
+
 [https://developer.mozilla.org/en-US/docs/Web/CSS/place-content](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content)
- - justify: main axis
- - align: cross axis
+
+- justify: main axis
+- align: cross axis
 
 ## 18.Re-ordering Grid Items
+
 .Item {
-	//Use order property for ordering, default is 0.
-	order: 2;
+//Use order property for ordering, default is 0.
+order: 2;
 }
 
 ## 19.Nesting Grid Layouts
+
 Simple Nesting Grid layout for albums.
 
 ## 20.CSS Grid Image Gallery!
+
 Random size image gallery layout example.
 
 ## 21.Flexbox vs CSS Grid
+
 Many examples for layout comparing with Flexbox and Grid.
 
 ## 22.Recreating Codepen
+
 Simple example of Codepen layout.
 
 ## 23.Bootstrappy Grid with CSS Variables!
+
 Declare CSS variable by using `--span: 1` in ".style" or inline element, and use it by `var(--span)`.
 
 ## 24.Responsive Website!
+
 Full Responsive Website example.
 
 ## 25.Full Bleed Blog Layout!
+
 Full Bleed Blog Layout example.
