@@ -142,6 +142,8 @@ Use template columns and rows to set the grid then name them by template areas.I
 		"sidebar-1 content sidebar-2"
 		"sidebar-1 content sidebar-2"
 		"footer footer footer"
+		". aoe ."
+
 }
 
 /* Setup the class reference to the "grid-template-areas". */
@@ -160,10 +162,14 @@ Use template columns and rows to set the grid then name them by template areas.I
 .item3 {
 	grid-area: sidebar-2;
 }
+
+.item4 {
+	grid-area: aoe;
+}
 ```
 
 ## 15.Naming Lines in CSS Grid
-[ ] set the name inside, you can also set multiple names
+Set the name inside **[ ]**, you can also set multiple names
 ```
 .container {
 	display: grid;
